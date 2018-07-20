@@ -32,6 +32,11 @@
   width: 100%;
   background: linear-gradient(#bf5700, #eb6e1f);
   color: white;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "skills-used skills-learning"
 }
 
 .skill-icon {
