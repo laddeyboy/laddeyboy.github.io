@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Assistant', sans-serif;'
+  font-family: 'Assistant', sans-serif;
 }
 
 .intro-container {
@@ -33,17 +33,43 @@
   background: linear-gradient(#bf5700, #eb6e1f);
   color: white;
   padding: 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "skills-used skills-learning"
+  display: flex;
+}
+
+.skills-used {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.skills-row {
+  height: 25%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+.skills-label {
+  width: 20%;
+  display: flex;
+  align-items: center;
 }
 
 .skill-icon {
-  /*border: 4px solid blue;*/
+  border: 4px solid blue;
   font-size: 3.5em;
 }
+.skills-tiles {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  /* i need to wrap but also grow the div too */
+  /* flex-wrap: wrap; */
+}
 
+.skills-learning {
+  width: 50%;
+}
+
+/* maybe outdated/redundant? */
 .skill-grid {
   /*border: 4px solid red;*/
   display: flex;
