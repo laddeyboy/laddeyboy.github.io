@@ -2,33 +2,74 @@
   padding: 0;
   margin: 0;
   font-family: 'Assistant', sans-serif;
+  box-sizing: border-box;
 }
 
 .intro-container {
   height: 100vh;
-  width: 100%;
-  background-color: #333f48;
   color: white;
   text-align: center;
+  background-color: #333f48;
   display: flex;
 }
 .intro-about {
-  width: 60%;
+  flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10%;
+  padding: 3%;
   font-size: 1.5em;
-  
 }
+
 .profile {
+  padding: 10%;
+  flex: 1;
   background-color: #2a343b;
   background: linear-gradient(#2a343b, #333f48);
-  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 650px) {
+  .intro-container {
+    height: 1200px;
+    flex-direction: column;
+  }
+  .profile {
+    order: 0;
+    flex-grow: 1;
+    margin-top: 55px;
+  }
+  .intro-about {
+    order: 1;
+    flex-grow: 2;
+    margin-top: 30px;
+  }
+  .intro-about p {
+    font-size: .75em;
+  }
+
+  .skills-container {
+    height: 1200px;
+    flex-direction: column;
+  }
+  .skills-row {
+    height: 300px;
+    flex-direction: column;
+    flex-shrink: 1;
+    border: 1px solid white;
+  }
+  .skills-used {
+    flex-shrink: 2;
+  }
+  .skills-learning {
+    flex-shrink: 2;
+  }
+
+  .skill-icon {
+    display: none;
+  }
 }
 
 .contact-info {
@@ -59,14 +100,13 @@
   height: 75vh;
   width: 100%;
   background: linear-gradient(#333f48, #bf5700);
- 
   color: white;
   padding: 10%;
   display: flex;
 }
 
 .skills-used {
-  width: 50%;
+  flex: 4;
   display: flex;
   flex-direction: column;
 }
@@ -77,9 +117,10 @@
   flex-direction: row;
 }
 .skills-label {
-  width: 20%;
+  width: 75px;
   display: flex;
   align-items: center;
+  margin-right: 15%;
   
 }
 
@@ -88,15 +129,14 @@
   font-size: 3.5em;
 }
 .skills-tiles {
-  width: 80%;
+  width: 4;
   display: flex;
   align-items: center;
-  /* i need to wrap but also grow the div too */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .skills-learning {
-  width: 50%;
+  flex: 1;
 }
 
 /* maybe outdated/redundant? */
@@ -153,4 +193,3 @@ a:link, a:visited, a:hover {
   color:white;
   text-decoration: none;
 }
-
