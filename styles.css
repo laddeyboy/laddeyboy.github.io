@@ -13,7 +13,6 @@
   display: flex;
 }
 .intro-about {
-  border: 2px solid white;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -24,15 +23,14 @@
   
 }
 .profile {
-  border: 2px solid white;
+  background-color: #2a343b;
+  background: linear-gradient(#2a343b, #333f48);
   width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.contact-pic {
 
-}
 .contact-info {
   margin-top: 75px;
 
@@ -50,7 +48,7 @@
 .about-container {
   height: 75vh;
   width: 100%;
-  background: linear-gradient(#333f48, #bf5700);
+
   color: white;
   padding: 10%;
   font-size: 1.5em;
@@ -60,7 +58,8 @@
 .skills-container {
   height: 75vh;
   width: 100%;
-  background: linear-gradient(#bf5700, #eb6e1f);
+  background: linear-gradient(#333f48, #bf5700);
+ 
   color: white;
   padding: 10%;
   display: flex;
@@ -123,9 +122,35 @@
 }
 
 
-.contact-container {
+.projects-container {
   height: 75vh;
   width: 100%;
-  background: linear-gradient(#eb6e1f, #002d62);
-
+  background: linear-gradient(#bf5700, #eb6e1f);
+  /* background: linear-gradient(#eb6e1f, #002d62); */
 }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: .8em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.icon-size {
+  vertical-align: bottom;
+  font-size: 2.2em;
+}
+.align {
+  display: flex;
+  justify-content: center;
+}
+a:link, a:visited, a:hover {
+  margin-left: 10px;
+  color:white;
+  text-decoration: none;
+}
+
