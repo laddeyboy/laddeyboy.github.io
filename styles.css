@@ -134,6 +134,7 @@ a:link, a:visited, a:hover {
   display: flex;
   align-items: center;
   margin-right: 15%;
+  font-size: 1.2em;
 }
 .skill-icon {
   /* border: 4px solid blue; */
@@ -163,12 +164,34 @@ a:link, a:visited, a:hover {
   text-align: center;
 }
 
-
 .projects-container {
   height: 75vh;
   width: 100%;
   background: linear-gradient(#bf5700, #eb6e1f);
-  /* background: linear-gradient(#eb6e1f, #002d62); */
+  color: white;
+  padding: 10%;
+}
+.my-projects {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.my-projects * {
+  border: 2px solid pink;
+}
+.blackjack-app {
+  flex: 1;
+}
+.trivia-app {
+  flex: 1;
+}
+.pedipaws-app {
+  flex: 1;
+}
+.project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
