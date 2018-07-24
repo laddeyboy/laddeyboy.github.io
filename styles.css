@@ -219,6 +219,9 @@ a:link, a:visited, a:hover {
 }
 
 @media screen and (max-width:650px) {
+  .projects-container {
+    height: 1100px;
+  }
   .my-projects {
     flex-direction: column;
   }
